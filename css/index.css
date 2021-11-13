@@ -1,0 +1,31 @@
+body {
+	background-color: #161616;
+	max-width: 960px;
+	margin: auto
+}
+
+#header {
+	color: white;
+	background-color: darkslategray;
+	border-radius: 5px;
+	font-family: Consolas;
+	font-size: 15px;
+	text-shadow: 5px 5px 5px black;
+	overflow: hidden;
+	padding: 20px 20px;
+}
+#header a {
+	color: inherit;
+	padding: 20px;
+	text-decoration: none;
+}
+#header a:hover {
+	color:  darkgray;
+}
+#header-title {
+	color: inherit;
+	font-family: inherit;
+	text-shadow: inherit;
+	font-size: 35px;
+	float: left;
+}
