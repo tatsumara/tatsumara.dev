@@ -1,6 +1,7 @@
 body {
 	background-color: #161616;
 	max-width: 960px;
+	padding-top: 10px;
 	margin: auto
 }
 
@@ -21,6 +22,9 @@ body {
 	text-decoration: none;
 }
 @media screen and (max-width: 600px) {
+	body {
+		padding: 10px 10px 0px 10px
+	}
 	#header {
 		flex-direction: column;
 		padding-bottom: 7px;
