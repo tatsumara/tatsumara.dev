@@ -5,27 +5,34 @@ body {
 }
 
 #header {
-	color: white;
+	color:lightgray;
 	background-color: darkslategray;
-	border-radius: 5px;
+	border-radius: 10px;
 	font-family: Consolas;
-	font-size: 15px;
-	text-shadow: 5px 5px 5px black;
-	overflow: hidden;
-	padding: 20px 20px;
+	font-size: 20px;
+	display: flex;
+	flex-flow: row no-wrap;
+	align-items: center;
 }
 #header a {
 	color: inherit;
+	text-shadow: 5px 5px 5px black;
 	padding: 20px;
 	text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+	#header {
+		flex-direction: column;
+		padding-bottom: 7px;
+	}
+	#header a {
+		padding: 3px;
+	}
 }
 #header a:hover {
 	color:  darkgray;
 }
 #header-title {
-	color: inherit;
-	font-family: inherit;
-	text-shadow: inherit;
+	color: white;
 	font-size: 35px;
-	float: left;
 }
