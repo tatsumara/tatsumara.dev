@@ -17,7 +17,7 @@ body {
 	color:var(--text);
 	background-color: var(--bg-box);
 	box-shadow: 5px 5px 5px var(--box-shadow);
-	border-radius: 10px;
+	border-radius: 6px;
 	font-family: Consolas,monaco,monospace; 
 	font-size: 20px;
 	display: flex;
@@ -36,7 +36,7 @@ body {
 	}
 	#header {
 		flex-direction: column;
-		padding-bottom: 7px;
+		padding-bottom: 10px;
 	}
 	#header a {
 		padding: 3px;
@@ -48,14 +48,29 @@ body {
 }
 #header-title {
 	color: var(--accent);
-	font-size: 35px
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#footer {
+	color:var(--text);
+	background-color: var(--bg-box);
+	box-shadow: 5px 5px 5px var(--box-shadow);
+	border-radius: 6px;
+	font-family: Consolas,monaco,monospace; 
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+#footer a {
+	color: var(--accent)
 }
 
 #box_container {
 	margin-top: 10px;
 	display: grid;
 	grid-gap: 10px 10px;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: auto auto;
 }
 @media screen and (max-width: 600px) {
 	#box_container {
@@ -67,7 +82,25 @@ body {
 	color: var(--text);
 	font-family: Consolas,monaco,monospace; 
 	box-shadow: 5px 5px 5px var(--box-shadow);
-	border-radius: 10px;
-	padding: 10px;
+	border-radius: 6px;
+	padding: 20px;
 	text-align: center;
+}
+.box a {
+	color: var(--accent)
+}
+
+ul {
+	text-align: start;
+	padding-left: 20px;
+}
+h1 {
+	color: var(--accent);
+	font-size: 25px;
+	text-align: start;
+	margin-top: 0px;
+}
+p {
+	text-align: start;
+	margin: 0px;
 }

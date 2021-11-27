@@ -1,10 +1,8 @@
-const header = document.createElement('div');
-header.id = 'header';
+const header = document.getElementById('header');
 header.innerHTML = /*html*/ `
 	<div id="header-title">
 		<a href="./">tatsumara.tk</a>
 	</div>
-	<a href="https://discord.gg/accela">Discord</a>
-	<a href="https://github.com/tatsumara">Github</a>
+	<a href="https://discord.gg/accela">discord</a>
+	<a href="https://github.com/tatsumara">github</a>
 `
-document.body.appendChild(header)

@@ -5,15 +5,28 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/index.css">
+		<script src="components/header.js" async></script>
+		<script src="components/footer.js" async></script>
 	</head>
 
 	<body>
-		<script src="components/header.js"></script>
+		<div id="header"></div>
 		<div id="box_container">
-			<div class="box">we at the hospital</div>
-			<div class="box">i love my gf and friends</div>
-			<div class="box">ピーッピーップーップー</div>
-			<div class="box">JOE BIDEN IN A FUCKING SILKY ON UNION STREET</div>
+			<div class="box">
+				<h1>about me</h1>
+				<p>hiya, my name is <span style="color: var(--accent);">mara</span>.</p>
+				<p>i try my hand at coding and like to learn by doing.</p>
+				<p>my biggest project is probably <a href="https://github.com/tatsumara/altair">altair</a>, a multi purpose discord bot written in javascript with a few special features that i am very proud of!</p>
+			</div>
+			<div class="box">
+				<h1>projects</h1>
+				<ul>
+					<li><a href="https://github.com/tatsumara/altair">altair</a>, multipurpose discord bot written in js</li>
+					<li><a href="https://github.com/tatsumara/amusic">amusic</a>, music bot to accompany altair</li>
+					<li><a href="https://accela.ml">accela.ml</a>, website for the accela discord server</li>
+				</ul>
+			</div>
 		</div>
+		<div id="footer"></div>
 	</body>
 </html>
