@@ -18,7 +18,7 @@ body {
 	background-color: var(--bg-box);
 	box-shadow: 5px 5px 5px var(--box-shadow);
 	border-radius: 10px;
-	font-family: Consolas;
+	font-family: Consolas,monaco,monospace; 
 	font-size: 20px;
 	display: flex;
 	flex-flow: row no-wrap;
@@ -65,7 +65,7 @@ body {
 .box {
 	background-color: var(--bg-box);
 	color: var(--text);
-	font-family: Consolas;
+	font-family: Consolas,monaco,monospace; 
 	box-shadow: 5px 5px 5px var(--box-shadow);
 	border-radius: 10px;
 	padding: 10px;
