@@ -1,14 +1,22 @@
+:root {
+	--bg: #1d1d1d;
+	--bg-box: #0f0f0f;
+	--box-shadow: rgb(0, 0, 0, 0.2);
+	--text: lightgray;
+	--accent: #7E5C8D;
+}
+
 body {
-	background-color: #1d1d1d;
+	background-color: var(--bg);
 	max-width: 960px;
 	padding-top: 10px;
 	margin: auto
 }
 
 #header {
-	color:lightgray;
-	background-color: #0f0f0f;
-	box-shadow: 5px 5px 5px black;
+	color:var(--text);
+	background-color: var(--bg-box);
+	box-shadow: 5px 5px 5px var(--box-shadow);
 	border-radius: 10px;
 	font-family: Consolas;
 	font-size: 20px;
@@ -18,7 +26,7 @@ body {
 }
 #header a {
 	color: inherit;
-	text-shadow: 5px 5px 5px black;
+	text-shadow: 5px 5px 5px var(--box-shadow);
 	padding: 20px;
 	text-decoration: none;
 }
@@ -39,6 +47,27 @@ body {
 	transition: color 300ms;
 }
 #header-title {
-	color: white;
-	font-size: 35px;
+	color: var(--accent);
+	font-size: 35px
+}
+
+#box_container {
+	margin-top: 10px;
+	display: grid;
+	grid-gap: 10px 10px;
+	grid-template-columns: auto auto auto;
+}
+@media screen and (max-width: 600px) {
+	#box_container {
+		grid-template-columns: auto;
+	}
+}
+.box {
+	background-color: var(--bg-box);
+	color: var(--text);
+	font-family: Consolas;
+	box-shadow: 5px 5px 5px var(--box-shadow);
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
 }
