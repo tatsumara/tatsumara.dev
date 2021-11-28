@@ -8,8 +8,8 @@
 
 body {
 	background-color: var(--bg);
-	max-width: 960px;
-	padding-top: 10px;
+	max-width: 980px;
+	padding: 10px 10px;
 	margin: auto
 }
 
