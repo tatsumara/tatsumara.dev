@@ -24,6 +24,10 @@ body {
 	display: flex;
 	flex-flow: row no-wrap;
 	align-items: center;
+	transition: transform 250ms;
+}
+#header:hover {
+	transform: scale(1.01);
 }
 #header a {
 	color: inherit;
@@ -92,6 +96,10 @@ body {
 	padding: 10px;
 	margin-top: 10px;
 	text-align: center;
+	transition: transform 250ms;
+}
+#footer:hover {
+	transform: scale(1.01);
 }
 
 ul {
