@@ -30,6 +30,7 @@ body {
 	text-shadow: 5px 5px 5px var(--box-shadow);
 	padding: 20px;
 	text-decoration: none;
+	transition: color 250ms;
 }
 @media screen and (max-width: 600px) {
 	body {
@@ -45,7 +46,6 @@ body {
 }
 #header a:hover {
 	color: var(--accent-dark);
-	transition: color 300ms;
 }
 #header-title {
 	color: var(--accent);
@@ -72,7 +72,10 @@ body {
 	border-radius: 6px;
 	padding: 20px;
 	text-align: center;
-	
+	transition: transform 250ms;
+}
+.box:hover {
+	transform: scale(1.02);
 }
 .box iframe {
 	margin-bottom: 10px;
