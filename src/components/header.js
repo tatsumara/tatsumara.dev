@@ -18,7 +18,7 @@ function updateClock() {
 	seconds = seconds < 10 ? '0' + seconds : seconds;
 
 	const time = document.getElementById('time');
-	time.innerHTML = `${hours}:${minutes}:${seconds}`
+	time.innerHTML = /*html*/`<p>${hours}:${minutes}:${seconds}<p>`
 }
 updateClock();
 setInterval(updateClock, 1000);
