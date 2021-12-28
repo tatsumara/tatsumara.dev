@@ -6,6 +6,14 @@
 	--accent: #7E5C8D;
 	--accent-dark: #594263;
 }
+.light {
+	--bg: #fff;
+	--bg-box: lightgray;
+	--box-shadow: rgb(0, 0, 0, 0.2);
+	--text: rgb(0, 0, 0);
+	--accent: #4b205e;
+	--accent-dark: #594263;
+}
 
 body {
 	background-color: var(--bg);
@@ -127,4 +135,10 @@ a {
 a:hover {
 	color: var(--accent-dark);
 	transition: color 300ms;
+}
+button {
+	color: var(--text);
+	background-color: var(--bg);
+	border: none;
+	border-radius: 6px;
 }
