@@ -35,7 +35,7 @@ body {
 	transition: transform 250ms;
 }
 #header:hover {
-	transform: scale(1.01);
+	transform: translateY(-5px);
 }
 #header a {
 	color: inherit;
@@ -92,7 +92,7 @@ body {
 	transition: transform 250ms;
 }
 .box:hover {
-	transform: scale(1.02);
+	transform: translateY(-5px);
 }
 .box iframe {
 	margin-bottom: 10px;
@@ -112,7 +112,7 @@ body {
 	transition: transform 250ms;
 }
 #footer:hover {
-	transform: scale(1.01);
+	transform: translateY(-5px);
 }
 
 ul {
