@@ -1,18 +1,17 @@
 :root {
 	--bg: #1d1d1d;
 	--bg-box: #0f0f0f;
-	--box-shadow: rgb(0, 0, 0, 0.2);
+	--box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
 	--text: lightgray;
 	--accent: #7E5C8D;
 	--accent-dark: #594263;
 }
 .light {
 	--bg: #fff;
-	--bg-box: lightgray;
-	--box-shadow: rgb(0, 0, 0, 0.2);
+	--bg-box: #fff;
+	--box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
 	--text: rgb(0, 0, 0);
-	--accent: #4b205e;
-	--accent-dark: #594263;
+	--accent: #5B137A;
 }
 
 body {
@@ -25,7 +24,7 @@ body {
 #header {
 	color:var(--text);
 	background-color: var(--bg-box);
-	box-shadow: 5px 5px 5px var(--box-shadow);
+	box-shadow: var(--box-shadow);
 	border-radius: 6px;
 	font-family: Consolas,monaco,monospace; 
 	font-size: 20px;
@@ -39,7 +38,6 @@ body {
 }
 #header a {
 	color: inherit;
-	text-shadow: 5px 5px 5px var(--box-shadow);
 	padding: 20px;
 	text-decoration: none;
 	transition: color 250ms;
@@ -85,7 +83,7 @@ body {
 	background-color: var(--bg-box);
 	color: var(--text);
 	font-family: Consolas,monaco,monospace; 
-	box-shadow: 5px 5px 5px var(--box-shadow);
+	box-shadow: var(--box-shadow);
 	border-radius: 6px;
 	padding: 20px;
 	text-align: center;
@@ -96,14 +94,14 @@ body {
 }
 .box iframe {
 	margin-bottom: 10px;
-	box-shadow: 5px 5px 5px var(--box-shadow);
+	box-shadow: var(--box-shadow);
 	border-radius: 6px;
 }
 
 #footer {
 	color:var(--text);
 	background-color: var(--bg-box);
-	box-shadow: 5px 5px 5px var(--box-shadow);
+	box-shadow: var(--box-shadow);
 	border-radius: 6px;
 	font-family: Consolas,monaco,monospace; 
 	padding: 10px;
@@ -144,6 +142,7 @@ a:hover {
 button {
 	color: var(--text);
 	font-family: Consolas,monaco,monospace;
+	box-shadow: var(--box-shadow);
 	cursor: pointer;
 	background-color: var(--bg);
 	border: none;
