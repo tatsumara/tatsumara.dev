@@ -18,7 +18,8 @@ body {
 	background-color: var(--bg);
 	max-width: 980px;
 	padding: 10px 10px;
-	margin: auto
+	margin: auto;
+	transition: background-color 500ms;
 }
 
 #header {
@@ -31,7 +32,7 @@ body {
 	display: flex;
 	flex-flow: row no-wrap;
 	align-items: center;
-	transition: transform 250ms;
+	transition: transform 250ms, background-color 500ms;
 }
 #header:hover {
 	transform: translateY(-5px);
@@ -87,7 +88,7 @@ body {
 	border-radius: 6px;
 	padding: 20px;
 	text-align: center;
-	transition: transform 250ms;
+	transition: transform 250ms, background-color 500ms;
 }
 .box:hover {
 	transform: translateY(-5px);
@@ -99,7 +100,7 @@ body {
 }
 
 #footer {
-	color:var(--text);
+	color: var(--text);
 	background-color: var(--bg-box);
 	box-shadow: var(--box-shadow);
 	border-radius: 6px;
@@ -107,7 +108,7 @@ body {
 	padding: 10px;
 	margin-top: 10px;
 	text-align: center;
-	transition: transform 250ms;
+	transition: transform 250ms, background-color 500ms;
 }
 #footer:hover {
 	transform: translateY(-5px);
@@ -122,18 +123,22 @@ h1 {
 	font-size: 25px;
 	text-align: start;
 	margin-top: 0px;
+	transition: color 500ms;
 }
 h2 {
 	color: var(--accent);
 	font-size: 18px;
 	text-align: start;
+	transition: color 500ms;
 }
 p {
 	text-align: start;
 	margin: 0px;
+	transition: color 500ms;
 }
 a {
-	color: var(--accent)
+	color: var(--accent);
+	transition: color 500ms;
 }
 a:hover {
 	color: var(--accent-dark);
