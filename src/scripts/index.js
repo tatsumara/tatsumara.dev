@@ -1,12 +1,3 @@
-const header = document.getElementById('header');
-header.innerHTML = /*html*/ `
-	<div id="header-title">
-		<a href="./">tatsumara.tk</a>
-	</div>
-	<a href="https://discord.gg/accela">discord</a>
-	<a href="https://github.com/tatsumara">github</a>
-	<div id="time"></div>
-`
 function updateClock() {
 	const now = new Date();
 	let hours = now.getHours();
@@ -20,5 +11,10 @@ function updateClock() {
 	const time = document.getElementById('time');
 	time.innerHTML = /*html*/`<p>${hours}:${minutes}:${seconds}<p>`
 }
+
+function toggleTheme() {
+	document.body.classList.toggle("light");
+}
+
 updateClock();
 setInterval(updateClock, 1000);
