@@ -116,7 +116,7 @@ footer:hover {
 ul {
 	text-align: start;
 	padding-left: 20px;
-	transition: color 250ms;
+	transition: color 500ms;
 }
 h1 {
 	color: var(--accent);
