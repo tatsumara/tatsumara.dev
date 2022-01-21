@@ -22,7 +22,7 @@ body {
 	transition: background-color 500ms;
 }
 
-#header {
+header {
 	color:var(--text);
 	background-color: var(--bg-box);
 	box-shadow: var(--box-shadow);
@@ -31,36 +31,36 @@ body {
 	font-size: 20px;
 	display: flex;
 	flex-flow: row no-wrap;
+	justify-content: space-between;
 	align-items: center;
+	padding: 0 20px;
 	transition: transform 250ms, background-color 500ms, box-shadow 500ms;
 }
-#header:hover {
+header:hover {
 	transform: translateY(-5px);
 }
-#header a {
+header a {
 	color: inherit;
-	padding: 20px;
+	padding: 20px 0;
 	text-decoration: none;
 	transition: color 250ms;
 }
-#header p {
-	padding: 0px 20px;
-}
+
 @media screen and (max-width: 600px) {
 	body {
 		padding: 10px;
 	}
-	#header {
+	header {
 		flex-direction: column;
 	}
-	#header a {
+	header a {
 		padding: 3px;
 	}
-	#header p {
+	header p {
 		padding: 3px;
 	}
 }
-#header a:hover {
+header a:hover {
 	color: var(--accent-dark);
 }
 #header-title {
