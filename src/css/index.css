@@ -45,7 +45,14 @@ header a {
 	text-decoration: none;
 	transition: color 250ms;
 }
-
+header a:hover {
+	color: var(--accent-dark);
+}
+#header-title {
+	color: var(--accent);
+	font-size: 35px;
+	font-weight: bold;
+}
 @media screen and (max-width: 600px) {
 	body {
 		padding: 10px;
@@ -59,14 +66,6 @@ header a {
 	header p {
 		padding: 3px;
 	}
-}
-header a:hover {
-	color: var(--accent-dark);
-}
-#header-title {
-	color: var(--accent);
-	font-size: 35px;
-	font-weight: bold;
 }
 
 .box_container {
@@ -99,7 +98,7 @@ header a:hover {
 	border-radius: 6px;
 }
 
-#footer {
+footer {
 	color: var(--text);
 	background-color: var(--bg-box);
 	box-shadow: var(--box-shadow);
@@ -110,13 +109,14 @@ header a:hover {
 	text-align: center;
 	transition: transform 250ms, background-color 500ms, box-shadow 500ms;
 }
-#footer:hover {
+footer:hover {
 	transform: translateY(-5px);
 }
 
 ul {
 	text-align: start;
 	padding-left: 20px;
+	transition: color 250ms;
 }
 h1 {
 	color: var(--accent);
