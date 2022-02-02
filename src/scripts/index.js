@@ -11,10 +11,24 @@ function updateClock() {
 	const time = document.getElementById('time');
 	time.innerHTML = /*html*/`<p>${hours}:${minutes}:${seconds}<p>`
 }
+updateClock();
+setInterval(updateClock, 1000);
 
 function toggleTheme() {
 	document.body.classList.toggle("light");
 }
 
-updateClock();
-setInterval(updateClock, 1000);
+const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let konamiAt = 0;
+document.addEventListener('keydown', key => {
+	if (key.key === konamiPattern[konamiAt]) {
+		konamiAt++;
+	} else {
+		konamiAt = 0;
+		return;
+	}
+	if (konamiAt >= konamiPattern.length) {
+		const headerTitle = document.getElementById('header-title');
+		headerTitle.innerHTML = /*html*/`you found me!`
+	}
+})
