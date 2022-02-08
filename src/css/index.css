@@ -96,6 +96,7 @@ header a:hover {
 	margin-bottom: 10px;
 	box-shadow: var(--box-shadow);
 	border-radius: 6px;
+	transition: box-shadow 500ms;
 }
 
 footer {
@@ -107,7 +108,7 @@ footer {
 	padding: 10px;
 	margin-top: 10px;
 	text-align: center;
-	transition: transform 250ms, background-color 500ms, box-shadow 500ms;
+	transition: transform 250ms, background-color 500ms, box-shadow 500ms, color 500ms;
 }
 footer:hover {
 	transform: translateY(-5px);
@@ -152,4 +153,9 @@ button {
 	background-color: var(--bg);
 	border: none;
 	border-radius: 6px;
+	transition: color 500ms, background-color 500ms, box-shadow 500ms;
+}
+.accent {
+	color: var(--accent);
+	transition: color 500ms;
 }
