@@ -1,21 +1,21 @@
 {
-  "name": "tatsumara.tk",
+  "name": "tatsumara.dev",
   "version": "1.0.0",
-  "description": "my personal website and portfolio at:\\\r https://www.tatsumara.tk",
+  "description": "my personal website and portfolio at:\\\r https://www.tatsumara.dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tatsumara/tatsumara.tk.git"
+    "url": "git+https://github.com/tatsumara/tatsumara.dev.git"
   },
   "author": "tatsumara",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tatsumara/tatsumara.tk/issues"
+    "url": "https://github.com/tatsumara/tatsumara.dev/issues"
   },
-  "homepage": "https://github.com/tatsumara/tatsumara.tk#readme",
+  "homepage": "https://github.com/tatsumara/tatsumara.dev#readme",
   "dependencies": {
     "express": "^4.17.3",
     "morgan": "^1.10.0"

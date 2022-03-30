@@ -1,3 +1,3 @@
-# tatsumara.tk
+# tatsumara.dev
 my personal website and portfolio at:\
-https://www.tatsumara.tk
+https://www.tatsumara.dev
