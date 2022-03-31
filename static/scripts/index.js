@@ -32,3 +32,11 @@ document.addEventListener('keydown', key => {
 		headerTitle.innerHTML = /*html*/`you found me!`
 	}
 })
+
+initComments({
+	node: document.getElementById('comment-section'),
+	defaultHomeserverUrl: 'https://matrix.cactus.chat:8448',
+	serverName: 'cactus.chat',
+	siteName: 'tatsumara.dev',
+	commentSectionId: 'section1'
+})

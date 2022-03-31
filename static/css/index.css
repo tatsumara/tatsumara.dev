@@ -16,7 +16,7 @@
 
 body {
 	background-color: var(--bg);
-	max-width: 980px;
+	max-width: 1080px;
 	padding: 10px 10px;
 	margin: auto;
 	transition: background-color 500ms;
@@ -158,4 +158,8 @@ button {
 .accent {
 	color: var(--accent);
 	transition: color 500ms;
+}
+
+.cactus-editor-textarea {
+	resize: none;
 }
