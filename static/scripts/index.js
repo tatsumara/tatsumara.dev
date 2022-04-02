@@ -16,6 +16,17 @@ setInterval(updateClock, 1000);
 
 function toggleTheme() {
 	document.body.classList.toggle("light");
+	if(window.localStorage.getItem("light-theme") === "true"){
+		window.localStorage.setItem("light-theme", "false");
+		document.getElementById("theme-toggle").innerHTML = "light";
+	} else {
+		window.localStorage.setItem("light-theme", "true")
+		document.getElementById("theme-toggle").innerHTML = "dark";
+	}
+}
+if(window.localStorage.getItem("light-theme") === "true"){
+	document.body.classList.toggle("light");
+	document.getElementById("theme-toggle").innerHTML = "dark";
 }
 
 const konamiPattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
