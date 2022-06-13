@@ -18,7 +18,9 @@
   "homepage": "https://github.com/tatsumara/tatsumara.dev#readme",
   "dependencies": {
     "express": "^4.17.3",
-    "morgan": "^1.10.0"
+    "isomorphic-unfetch": "^3.1.0",
+    "morgan": "^1.10.0",
+    "spotify-url-info": "^3.1.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
