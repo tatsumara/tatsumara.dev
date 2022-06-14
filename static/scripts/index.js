@@ -14,6 +14,18 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
+async function loadSongs() {
+	const result = await fetch("/top4");
+	const top4 = await result.json();
+
+	top4.forEach(id => {
+		const tempDiv = document.createElement("div");
+		tempDiv.innerHTML = /*html*/`<iframe src="https://open.spotify.com/embed/track/${id}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+		document.getElementById("spotify").appendChild(tempDiv)
+	});
+}
+loadSongs();
+
 function toggleTheme() {
 	document.body.classList.toggle("light");
 	if(window.localStorage.getItem("light-theme") === "true"){
