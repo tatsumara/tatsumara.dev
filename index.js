@@ -8,10 +8,15 @@ app.use(morgan('[:date[web]] :remote-addr :method :url :status'));
 app.set('trust proxy', true);
 app.use(express.static('static'));
 
+let songArray;
+let songArrayAge = 0;
 app.get('/top4', async (req, res) => {
-	let data = await spot.getTracks('https://open.spotify.com/playlist/37i9dQZF1EpwA0Eb3mMXw4');
-	data = data.sort(() => 0.5 - Math.random()).slice(0, 4).map(song => { return song.id });
-	res.send(data);
+	if (Date.now() - songArrayAge > 86400000) {
+		let data = await spot.getTracks('https://open.spotify.com/playlist/37i9dQZF1EpwA0Eb3mMXw4');
+		songArray = data.sort(() => 0.5 - Math.random()).slice(0, 4).map(song => { return song.id });
+		songArrayAge = Date.now()
+	}
+	res.send(songArray);
 });
 
 app.use((req, res, next) => {
