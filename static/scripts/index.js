@@ -20,7 +20,7 @@ async function loadSongs() {
 
 	top4.forEach(id => {
 		const tempDiv = document.createElement("div");
-		tempDiv.innerHTML = /*html*/`<iframe src="https://open.spotify.com/embed/track/${id}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>`;
+		tempDiv.innerHTML = /*html*/`<iframe src="https://open.spotify.com/embed/track/${id}" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
 		document.getElementById("spotify").appendChild(tempDiv)
 	});
 }
