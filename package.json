@@ -1,28 +1,20 @@
 {
-  "name": "tatsumara.dev",
-  "version": "1.0.0",
-  "description": "my personal website and portfolio at:\\\r https://www.tatsumara.dev",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tatsumara/tatsumara.dev.git"
-  },
-  "author": "tatsumara",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tatsumara/tatsumara.dev/issues"
-  },
-  "homepage": "https://github.com/tatsumara/tatsumara.dev#readme",
-  "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "morgan": "^1.10.0",
-    "spotify-api.js": "^9.2.5"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
+	"name": "tatsumara.dev",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "eslint ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.5.0",
+		"eslint": "^8.28.0",
+		"eslint-plugin-svelte": "^2.26.0",
+		"svelte": "^3.54.0",
+		"vite": "^4.3.0"
+	},
+	"type": "module"
 }
