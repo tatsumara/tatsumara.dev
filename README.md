@@ -9,8 +9,9 @@ https://www.tatsumara.dev
 	- projects
 	- songs
 	- other stuff
-	- notes
+	- notes (separate route?)
 	- chat box?
 - redo style and structure
 - transition between routes
 - figure out svg icon handling
+- implement docker CI
