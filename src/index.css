@@ -1,0 +1,67 @@
+:root {
+	--bg: #1d1d1d;
+	--bg-box: #0f0f0f;
+	--box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+	--text: lightgray;
+	--accent: #7E5C8D;
+	--accent-dark: #594263;
+}
+
+* {
+	transition: color 150ms, filter 150ms;
+}
+
+body {
+	background-color: var(--bg);
+	max-width: 1080px;
+	padding: 10px 10px;
+	margin: auto;
+	color: var(--text);
+	font-family: Consolas,monaco,monospace; 
+	font-size: 16px;
+}
+
+header {
+	background-color: var(--bg-box);
+	color: var(--text);
+	box-shadow: var(--box-shadow);
+	border-radius: 6px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px;
+}
+
+a {
+	color: var(--accent);
+}
+a:hover {
+	color: var(--accent-dark);
+}
+
+footer {
+	background-color: var(--bg-box);
+	color: var(--text);
+	box-shadow: var(--box-shadow);
+	border-radius: 6px;
+	padding: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#header-title {
+	color: var(--accent);
+	font-size: 36px;
+	font-weight: bold;
+}
+#header-title a {
+	text-decoration: none;
+}
+
+.icon {
+	vertical-align: middle;
+}
+.icon:hover {
+	filter: brightness(0) saturate(100%) invert(26%) sepia(10%) saturate(2013%) hue-rotate(237deg) brightness(91%) contrast(83%);
+}
